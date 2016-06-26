@@ -1,6 +1,6 @@
-# localhost_vue.implements.io
+# vue.thonatos.com
 
-> implements.io vue version
+> www.thonatos.com vue version
 
 ## Build Setup
 
@@ -9,13 +9,13 @@
 npm install
 
 # serve with hot reload at localhost:8080
-npm run dev
+npm run-script dev
 
 # build for production with minification
-npm run build
+npm run-script build
 
 # run unit tests
-npm test
+npm run-script test
 ```
 
 For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
