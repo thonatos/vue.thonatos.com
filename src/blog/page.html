@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <!--
+  _____   _   _   _____   __   _       ___   _____   _____   _____
+  |_   _| | | | | /  _  \ |  \ | |     /   | |_   _| /  _  \ /  ___/
+    | |   | |_| | | | | | |   \| |    / /| |   | |   | | | | | |___
+    | |   |  _  | | | | | | |\   |   / / | |   | |   | | | | \___  \
+    | |   | | | | | |_| | | | \  |  / /  | |   | |   | |_| |  ___| |
+    |_|   |_| |_| \_____/ |_|  \_| /_/   |_|   |_|   \_____/ /_____/
+    # mail: thonatos.yang@gmail.com
+    # url: https://www.thonatos.com
+  -->  
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="renderer" content="webkit">
+  <meta name="keywords" content="Thonatos,Thonatos.Yang">
+  <meta name="description" content="Life is short, Play more?">
+  <title>{%=o.htmlWebpackPlugin.options.title%}</title>  
+  
+  <link href="//cdn.bootcss.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+  {% for (var css in o.htmlWebpackPlugin.files.css) { %}      
+      <link href="{%=o.htmlWebpackPlugin.files.css[css] %}" rel="stylesheet">
+  {% } %}  
+</head>
+<body>
+  <div id="app"></div>
+  {% for (var chunk in o.htmlWebpackPlugin.files.chunks) { %}
+      <script src="{%=o.htmlWebpackPlugin.files.chunks[chunk].entry %}"></script>
+  {% } %}
+</body>
+</html>

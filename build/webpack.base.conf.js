@@ -3,7 +3,8 @@ var path = require('path')
 module.exports = {
   entry: {
     about: './src/about/entry.js',
-    fm: './src/fm/entry.js'
+    fm: './src/fm/entry.js',
+    blog: './src/blog/entry.js'
   },
   output: {
     path: path.resolve(__dirname, '../dist/static'),

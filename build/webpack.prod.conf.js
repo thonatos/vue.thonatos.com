@@ -59,7 +59,13 @@ config.plugins = (config.plugins || []).concat([
     filename: '../fm.html',
     template: 'src/fm/page.html',
     chunks: ['fm']    
-  })   
+  }),
+  new HtmlWebpackPlugin({
+    title: config.site.getName('Blog'),
+    filename: 'blog.html',
+    template: 'src/blog/page.html',
+    chunks: ['blog']    
+  })    
 ])
 
 module.exports = config

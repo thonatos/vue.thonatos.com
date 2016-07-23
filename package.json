@@ -8,7 +8,11 @@
     "test": "karma start build/karma.conf.js --single-run"
   },
   "dependencies": {
-    "vue": "^1.0.15"
+    "echarts": "^3.2.2",
+    "vue": "^1.0.15",
+    "vue-resource": "^0.9.3",
+    "vue-router": "^0.7.13",
+    "vuex": "^1.0.0-rc.2"
   },
   "devDependencies": {
     "babel-core": "^6.0.0",
