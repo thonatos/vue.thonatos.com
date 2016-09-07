@@ -14,41 +14,40 @@
         </li>
       </ul>
     </div>
-    <div class="footer">
-      
-    </div>
   </div>
 </template>
 
 <script>
-export default {
-  data () {
-    return {
-      name: 'Thonatos.Yang',
-      detail: {
-        email: 'thonatos.yang@gmail.com',
-        career: 'Frontend Developer / 前端汪, DevOps / 运维开发',
-        degree: '09/2011 - 06/2015, Department of Remote sensing science and technology, NUIST, NanJing'
-      },
-      links: [
-        {
-          name: 'weibo',
-          href: 'http://weibo.com/thonatos',
-          icon: 'fa-weibo'
+  export default {
+    data () {
+      return {
+        name: 'Thonatos.Yang',
+        detail: {
+          email: 'thonatos.yang@gmail.com',
+          career: 'Frontend Developer / 前端汪, DevOps / 运维开发',
+          degree: '09/2011 - 06/2015, Department of Remote sensing science and technology, NUIST, NanJing'
         },
-        {
-          name: 'github',
-          href: 'https://github.com/thonatos',
-          icon: 'fa-github'
-        }]
+        links: [
+          {
+            name: 'weibo',
+            href: 'http://weibo.com/thonatos',
+            icon: 'fa-weibo'
+          },
+          {
+            name: 'github',
+            href: 'https://github.com/thonatos',
+            icon: 'fa-github'
+          }]
+      }
     }
   }
-}
 </script>
+
 
 <style lang="less">
   @import "../_less/v2/base";
   @import "../_less/component/animation";
+
   .container {
     display: flex;
     align-items: center;
@@ -60,10 +59,10 @@ export default {
       }
       .detail {
         h1 {
-          font-size: 1.6rem;
+          font-size: 1.2rem;
         }
         p {
-          font-size: 1rem;
+          font-size: 0.8rem;
         }
       }
       ul.social {
