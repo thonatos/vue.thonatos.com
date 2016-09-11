@@ -1,9 +1,9 @@
 <template>
   <div class="side">
-    <div class="brand">Vue Prj</div>
+    <div class="brand">Life</div>
     <div class="menu">
       <span class="group">main</span>
-      <a v-link="{ path: '/posts/1' }">Home</a>
+      <a v-link="{ path: '/posts/1' }">Blog</a>
       <a v-link="{ path: '/charts/' }">Charts</a>
     </div>
   </div>
@@ -55,7 +55,7 @@
       }
     }
   }
-  
+
   .main {
     width: 100%;
     padding-left: 14em;
@@ -65,8 +65,8 @@
       height: 4em;
       line-height: 4em;
       background: #edf1f7;
-      color: #bbb;     
-      padding: 0 2em; 
+      color: #bbb;
+      padding: 0 2em;
     }
     .footer {}
     .container {

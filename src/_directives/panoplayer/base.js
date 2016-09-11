@@ -9,10 +9,10 @@
  *
  */
 
-import MoveControls from './_moveControls'
+import MoveControls from './moveControls'
 
+var STATS = require('./stats')
 var THREE = require('three')
-var STATS = require('./_stats')
 var VIDEO_ERROR = {
   1: 'video loading aborted',
   2: 'network loading error',

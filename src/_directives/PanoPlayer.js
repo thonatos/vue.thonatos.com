@@ -10,7 +10,7 @@
  */
 
 import Vue from 'vue'
-import PanoPlayer from './panoplayer/_player'
+import PanoPlayer from './panoplayer/base'
 
 export default {
   deep: true,

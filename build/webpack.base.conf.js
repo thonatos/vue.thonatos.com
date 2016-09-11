@@ -4,7 +4,7 @@ module.exports = {
   entry: {
     about: './src/about/entry.js',
     pano: './src/pano/entry.js',
-    blog: './src/blog/entry.js'
+    life: './src/life/entry.js'
   },
   output: {
     path: path.resolve(__dirname, '../dist/static'),

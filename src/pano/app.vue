@@ -1,6 +1,6 @@
 
 <template>
-  <div class="pano">
+  <div id="pano">
     <div id='panoplayer' v-panoplayer="pano" :status="normal" :muted="muted"></div>
   </div>
 </template>

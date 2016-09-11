@@ -8,6 +8,3 @@
 export const getPostsPage = state => state.posts.page
 export const getPostsList = state => state.posts.list
 export const getPostsItem = state => state.posts.post
-export const getChartList = state => state.chart.list
-export const getChartName = state => state.chart.name
-export const getChartData = state => state.chart.data
