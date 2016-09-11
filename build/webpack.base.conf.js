@@ -46,7 +46,11 @@ module.exports = {
           limit: 10000,
           name: '[name].[ext]?[hash:7]'
         }
-      }
+      },
+      {
+      test: /\.(mp4)$/,
+      loader: 'file'
+    }
     ]
   },
   site: {

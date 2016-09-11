@@ -22,7 +22,7 @@ app.use(require('webpack-dev-middleware')(compiler, {
 // compilation error display
 app.use(require('webpack-hot-middleware')(compiler))
 
-app.listen(PORT, 'localhost', function (err) {
+app.listen(PORT, '0.0.0.0', function (err) {
   if (err) {
     console.log(err)
     return

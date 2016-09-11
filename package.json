@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "echarts": "^3.2.2",
+    "three": "^0.80.1",
     "vue": "^1.0.15",
     "vue-resource": "^0.9.3",
     "vue-router": "^0.7.13",
@@ -29,7 +30,7 @@
     "eventsource-polyfill": "^0.9.6",
     "express": "^4.13.3",
     "extract-text-webpack-plugin": "^0.9.1",
-    "file-loader": "^0.8.4",
+    "file-loader": "^0.8.5",
     "function-bind": "^1.0.2",
     "html-webpack-plugin": "^1.7.0",
     "inject-loader": "^2.0.1",
