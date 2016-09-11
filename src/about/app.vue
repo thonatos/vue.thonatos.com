@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div id="about" class="about">
-      <img class="avatar" src="../_assets/mtt.png">
+      <img class="avatar" src="../_assets/mtt.jpg">
       <article class="detail">
         <h1>{{ name }}</h1>
         <p>{{ detail.email }}<br> {{ detail.career }}<br> {{ detail.degree }}</p>
@@ -9,7 +9,7 @@
       <ul class="social">
         <li v-for="link in links">
           <a href="{{ link.href }}">
-            <i class="fa fa-2x {{ link.icon }}"></i>
+            <i class="iconfont">{{{ link.icon }}}</i>
           </a>
         </li>
       </ul>
@@ -31,12 +31,12 @@
           {
             name: 'weibo',
             href: 'http://weibo.com/thonatos',
-            icon: 'fa-weibo'
+            icon: '&#xe619;'
           },
           {
             name: 'github',
             href: 'https://github.com/thonatos',
-            icon: 'fa-github'
+            icon: '&#xe69f;'
           }]
       }
     }
@@ -47,6 +47,7 @@
 <style lang="less">
   @import "../_less/v2/base";
   @import "../_less/component/animation";
+  @import "../_less/iconfont/about";
 
   .container {
     display: flex;
@@ -74,6 +75,9 @@
           padding-right: 0.6em;
           a {
             color: #2d2d2d;
+            i {
+              font-size: 24px;
+            }
           }
         }
       }

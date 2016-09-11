@@ -3,7 +3,7 @@ var path = require('path')
 module.exports = {
   entry: {
     about: './src/about/entry.js',
-    fm: './src/fm/entry.js',
+    pano: './src/pano/entry.js',
     blog: './src/blog/entry.js'
   },
   output: {
@@ -40,10 +40,11 @@ module.exports = {
         loader: 'json'
       },
       {
-        test: /\.(png|jpg|gif|svg)$/,
-        loader: 'url',
+        test: /\.(png|jpg|gif|svg|eot|ttf|woff)\??.*$/,
+        loader: 'url-loader?name=[path][name].[ext]',
+        //loader: 'url',
         query: {
-          limit: 10000,
+          limit: 50000,
           name: '[name].[ext]?[hash:7]'
         }
       },
