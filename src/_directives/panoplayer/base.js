@@ -74,7 +74,8 @@ export default function (bundleInterface, bundleProtected) {
 
     // WebGl
     videoTexture = new THREE.Texture(videoCanvas)
-    videoTexture.minFilter = THREE.LinearFilter
+    // videoTexture.minFilter = THREE.LinearFilter
+    videoTexture.minFilter = THREE.NearestFilter
     camera = new THREE.PerspectiveCamera(90, window.innerWidth / window.innerHeight, 1, 10000)
     scene = new THREE.Scene()
     videoMesh = new THREE.Mesh(new THREE.SphereGeometry(1000, 96, 48), new THREE.MeshBasicMaterial({
